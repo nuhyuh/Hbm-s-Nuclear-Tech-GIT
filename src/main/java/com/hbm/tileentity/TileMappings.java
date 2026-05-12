@@ -223,8 +223,9 @@ public class TileMappings {
 		put(TileEntityEmitter.class, "tileentity_ntm_emitter");
 
 		put(TileEntityCargoElevator.class, "tileentity_cargo_elevator");
+		put(TileEntityCargoElevatorLarge.class, "tileentity_cargo_elevator_large");
 		put(TileEntityDoorGeneric.class, "tileentity_ntm_door");
-		
+
 		put(TileEntityCharger.class, "tileentity_ntm_charger");
 		put(TileEntityRefueler.class, "tileentity_ntm_refueler");
 
