@@ -308,6 +308,7 @@ public class ResourceManager {
 
 	//Elevator
 	public static final IModelCustom cargo_elevator = new HFRWavefrontObject("models/machines/elevator.obj").asVBO();
+	public static final IModelCustom cargo_elevator_large = new HFRWavefrontObject("models/machines/elevatorlarge.obj").asVBO();
 
 	//Blast Door
 	public static final IModelCustom blast_door_base = AdvancedModelLoader.loadModel(new ResourceLocation(RefStrings.MODID, "models/blast_door_base.obj"));
@@ -342,6 +343,8 @@ public class ResourceManager {
 	public static final ResourceLocation pheo_secure_door_grey_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/secure_door_grey.png");
 	public static final ResourceLocation pheo_secure_door_black_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/secure_door_black.png");
 	public static final ResourceLocation pheo_secure_door_yellow_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/secure_door_yellow.png");
+	public static final ResourceLocation pheo_secure_door_green_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/secure_door_green.png");
+	public static final ResourceLocation pheo_secure_door_blue_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/secure_door_blue.png");
 	public static IModelCustomNamed pheo_secure_door = new HFRWavefrontObject(new ResourceLocation(RefStrings.MODID, "models/pheodoors/secure_door.obj")).asVBO();
 	public static final ResourceLocation pheo_sliding_door_tex = new ResourceLocation(RefStrings.MODID, "textures/models/pheodoors/sliding_door.png");
 	public static IModelCustomNamed pheo_sliding_door = new HFRWavefrontObject(new ResourceLocation(RefStrings.MODID, "models/pheodoors/sliding_door.obj")).asVBO();
@@ -777,7 +780,8 @@ public class ResourceManager {
 
 	//Elevator
 	public static final ResourceLocation cargo_elevator_tex = new ResourceLocation(RefStrings.MODID, "textures/models/machines/elevator.png");
-	
+	public static final ResourceLocation cargo_elevator_large_tex = new ResourceLocation(RefStrings.MODID, "textures/models/machines/elevatorlarge.png");
+
 	//Vault Door
 	public static final ResourceLocation vault_cog_tex = new ResourceLocation(RefStrings.MODID, "textures/models/vault_cog.png");
 	public static final ResourceLocation vault_frame_tex = new ResourceLocation(RefStrings.MODID, "textures/models/vault_frame.png");
@@ -849,7 +853,7 @@ public class ResourceManager {
 	//Pipes
 	public static final ResourceLocation pipe_anchor_tex = new ResourceLocation(RefStrings.MODID, "textures/models/network/pipe_anchor.png");
 	public static final ResourceLocation fluid_pump_tex = new ResourceLocation(RefStrings.MODID, "textures/models/network/fluid_diode.png");
-	
+
 	//Barrels
 	public static ResourceLocation barrel_plastic_tex  = new ResourceLocation(RefStrings.MODID, "textures/blocks/barrel_plastic.png");
 	public static ResourceLocation barrel_steel_tex    = new ResourceLocation(RefStrings.MODID, "textures/blocks/barrel_steel.png");

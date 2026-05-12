@@ -184,9 +184,7 @@ public class ClientProxy extends ServerProxy {
 	}
 
 	@Override
-	public void registerGunCfg() {
-		GunFactoryClient.init();
-	}
+	public void registerGunCfg() { GunFactoryClient.init();}
 
 	@Override
 	public void registerTileEntitySpecialRenderer() {
@@ -440,6 +438,7 @@ public class ClientProxy extends ServerProxy {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityWatzPump.class, new RenderWatzPump());
 		//Elevator
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCargoElevator.class, new RenderCargoElevator());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCargoElevatorLarge.class, new RenderCargoElevatorLarge());
 		//doors
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlastDoor.class, new RenderBlastDoor());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDoorGeneric.class, new RenderDoorGeneric());
