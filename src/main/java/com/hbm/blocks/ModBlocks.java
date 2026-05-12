@@ -580,7 +580,8 @@ public class ModBlocks {
 	public static Block seal_hatch;
 
 	public static Block cargo_elevator;
-	
+	public static Block cargo_elevator_large;
+
 	public static Block vault_door;
 	public static Block blast_door;
 	public static Block sliding_blast_door;
@@ -724,7 +725,7 @@ public class ModBlocks {
 
 	public static Block machine_battery_socket;
 	public static Block machine_battery_redd;
-  
+
 	@Deprecated public static Block machine_battery_potato;
 	@Deprecated public static Block machine_battery;
 	@Deprecated public static Block machine_lithium_battery;
@@ -1825,7 +1826,7 @@ public class ModBlocks {
 
 		machine_battery_socket = new MachineBatterySocket().setBlockName("machine_battery_socket").setHardness(5.0F).setResistance(10.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":block_steel");
 		machine_battery_redd = new MachineBatteryREDD().setBlockName("machine_battery_redd").setHardness(5.0F).setResistance(10.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":block_steel");
-		
+
 		machine_battery_potato = new MachineBattery(Material.iron, 10_000).setBlockName("machine_battery_potato").setHardness(5.0F).setResistance(10.0F).setCreativeTab(null);
 		machine_battery = new MachineBattery(Material.iron, 1_000_000).setBlockName("machine_battery").setHardness(5.0F).setResistance(10.0F).setCreativeTab(null);
 		machine_lithium_battery = new MachineBattery(Material.iron, 50_000_000).setBlockName("machine_lithium_battery").setHardness(5.0F).setResistance(10.0F).setCreativeTab(null);
@@ -2037,7 +2038,8 @@ public class ModBlocks {
 		seal_hatch = new BlockHatch(Material.iron).setBlockName("seal_hatch").setHardness(Float.POSITIVE_INFINITY).setResistance(Float.POSITIVE_INFINITY).setCreativeTab(null).setBlockTextureName(RefStrings.MODID + ":seal_hatch_3");
 
 		cargo_elevator = new BlockCargoElevator().setBlockName("cargo_elevator").setHardness(5.0F).setResistance(10.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":block_steel");
-		
+		cargo_elevator_large = new BlockCargoElevatorLarge().setBlockName("cargo_elevator_large").setHardness(5.0F).setResistance(10.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":block_steel");
+
 		vault_door = new BlockDoorGeneric(Material.iron, DoorDecl.VAULT_DOOR).setBlockName("vault_door").setHardness(10.0F).setResistance(1_000.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":concrete");
 		blast_door = new BlastDoor(Material.iron).setBlockName("blast_door").setHardness(10.0F).setResistance(1_000.0F).setCreativeTab(MainRegistry.machineTab).setBlockTextureName(RefStrings.MODID + ":blast_door");
 
@@ -2963,7 +2965,9 @@ public class ModBlocks {
 
 		//Hooh
 		GameRegistry.registerBlock(cargo_elevator, cargo_elevator.getUnlocalizedName());
-		
+		GameRegistry.registerBlock(cargo_elevator_large, cargo_elevator_large.getUnlocalizedName());
+
+
 		//Vault Door
 		GameRegistry.registerBlock(vault_door, vault_door.getUnlocalizedName());
 		GameRegistry.registerBlock(blast_door, blast_door.getUnlocalizedName());
